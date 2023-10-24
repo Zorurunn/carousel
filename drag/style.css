@@ -1,0 +1,126 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border: 6px solid black;
+position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    transform: translateX(-20%);
+}
+
+.box {
+    flex-grow: 1;
+    height: 300px;
+    font-size: 250px;
+    text-align: center;
+    background-color: green;
+    border: 10px solid blue;
+}
+
+.btn-cont {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn {
+    font-size: 50px;
+    padding: 20px;
+}
+
+*/
+
+body {
+    /* この例の中でユーザーによるテキストの選択を防止する */
+    user-select: none;
+}
+
+#draggable {
+    text-align: center;
+    background: white;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border: 6px solid black;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropzone {
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dropzone-left {
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dropzone-right {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.dropzone.dragover {
+    background-color: purple;
+}
+
+.dragging {
+    opacity: 0.5;
+}
