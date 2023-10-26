@@ -24,15 +24,28 @@
 
 .slider {
     display: flex;
-    width: 500%;
-    transform: translateX(-20%);
+    width: 450%;
 }
 
-
-.box {
+.gapBox {
     flex-grow: 1;
     height: 300px;
-    font-size: 250px;
+    padding: 40px;
+    position: relative;
+}
+
+.gapBox>img {
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    /* transform: scale(0.9); */
+    width: 100%;
+    height: 100%;
+    font-size: 200px;
     text-align: center;
     background-color: green;
     border: 10px solid blue;
